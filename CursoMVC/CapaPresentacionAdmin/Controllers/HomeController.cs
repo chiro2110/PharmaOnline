@@ -20,7 +20,7 @@ namespace CapaPresentacionAdmin.Controllers
         {
             return View();
         }
-
+        [HttpGet]
         public JsonResult ListarUsuarios()
         {
             List<Usuario> oLista = new List<Usuario>();
@@ -29,6 +29,25 @@ namespace CapaPresentacionAdmin.Controllers
 
             return Json(new {data = oLista}, JsonRequestBehavior.AllowGet);
         }
+
+        [HttpPost]
+        public JsonResult GuardarUsuario(Usuario objeto)
+        {
+            object resultado;
+            string mensaje = string.Empty;
+
+            if (objeto.IdUsuario == 0)
+            {
+                resultado = new CN_Usuarios().Registrar(objeto, out mensaje);
+            }
+            else
+            {
+                resultado = new CN_Usuarios().Editar(objeto, out mensaje);
+            }
+
+            return Json(new { resultado = resultado, mensaje = mensaje }, JsonRequestBehavior.AllowGet);
+        }
+
 
     }
 } 
