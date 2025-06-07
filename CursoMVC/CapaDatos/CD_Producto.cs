@@ -1,35 +1,40 @@
-﻿using CapaEntidad;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
-using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+
+using CapaEntidad;
+
+using System.Data.SqlClient;
+using System.Data;
+using System.Globalization;
 
 namespace CapaDatos
 {
     public class CD_Producto
     {
+
         public List<Producto> Listar()
         {
+
             List<Producto> lista = new List<Producto>();
 
             try
             {
                 using (SqlConnection oconexion = new SqlConnection(Conexion.cn))
                 {
+
                     StringBuilder sb = new StringBuilder();
 
                     sb.AppendLine("select p.IdProducto,p.Nombre,p.Descripcion,");
-                    sb.AppendLine("m.Descripcion[DesMarca],");
+                    sb.AppendLine("m.IdMarca,m.Descripcion[DesMarca],");
                     sb.AppendLine("c.IdCategoria,c.Descripcion[DesCategoria],");
                     sb.AppendLine("p.Precio,p.Stock,p.RutaImagen,p.NombreImagen,p.Activo");
                     sb.AppendLine("from PRODUCTO p");
                     sb.AppendLine("inner join MARCA m on m.IdMarca = p.IdMarca");
                     sb.AppendLine("inner join CATEGORIA c on c.IdCategoria = p.IdCategoria");
-
 
 
                     SqlCommand cmd = new SqlCommand(sb.ToString(), oconexion);
@@ -53,20 +58,76 @@ namespace CapaDatos
                                 RutaImagen = dr["RutaImagen"].ToString(),
                                 NombreImagen = dr["NombreImagen"].ToString(),
                                 Activo = Convert.ToBoolean(dr["Activo"])
-
                             });
-
                         }
                     }
                 }
             }
-            catch 
+            catch
             {
                 lista = new List<Producto>();
-            }
 
+            }
             return lista;
         }
+
+
+
+        public List<Producto> ObtenerProductos(int idMarca, int idCategoria, int nroPagina, int obtenerRegistros, out int TotalRegistros, out int TotalPaginas)
+        {
+
+            List<Producto> lista = new List<Producto>();
+            TotalRegistros = 0;
+            TotalPaginas = 0;
+            try
+            {
+                using (SqlConnection oconexion = new SqlConnection(Conexion.cn))
+                {
+
+                    SqlCommand cmd = new SqlCommand("sp_ObtenerProductos", oconexion);
+                    cmd.Parameters.AddWithValue("idMarca", idMarca);
+                    cmd.Parameters.AddWithValue("idCategoria", idCategoria);
+                    cmd.Parameters.AddWithValue("nroPagina", nroPagina);
+                    cmd.Parameters.AddWithValue("obtenerRegistros", obtenerRegistros);
+                    cmd.Parameters.Add("TotalRegistros", SqlDbType.Int).Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add("TotalPaginas", SqlDbType.Int).Direction = ParameterDirection.Output;
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    oconexion.Open();
+
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            lista.Add(new Producto()
+                            {
+                                IdProducto = Convert.ToInt32(dr["IdProducto"]),
+                                Nombre = dr["Nombre"].ToString(),
+                                Descripcion = dr["Descripcion"].ToString(),
+                                oMarca = new Marca() { IdMarca = Convert.ToInt32(dr["IdMarca"]), Descripcion = dr["DesMarca"].ToString() },
+                                oCategoria = new Categoria() { IdCategoria = Convert.ToInt32(dr["IdCategoria"]), Descripcion = dr["DesCategoria"].ToString() },
+                                Precio = Convert.ToDecimal(dr["Precio"], new CultureInfo("es-PE")),
+                                Stock = Convert.ToInt32(dr["Stock"]),
+                                RutaImagen = dr["RutaImagen"].ToString(),
+                                NombreImagen = dr["NombreImagen"].ToString(),
+                                Activo = Convert.ToBoolean(dr["Activo"])
+                            });
+                        }
+                    }
+
+                    TotalRegistros = Convert.ToInt32(cmd.Parameters["TotalRegistros"].Value);
+                    TotalPaginas = Convert.ToInt32(cmd.Parameters["TotalPaginas"].Value);
+                }
+            }
+            catch
+            {
+                lista = new List<Producto>();
+
+            }
+            return lista;
+        }
+
+
 
         public int Registrar(Producto obj, out string Mensaje)
         {
@@ -75,6 +136,8 @@ namespace CapaDatos
             Mensaje = string.Empty;
             try
             {
+
+
                 using (SqlConnection oconexion = new SqlConnection(Conexion.cn))
                 {
                     SqlCommand cmd = new SqlCommand("sp_RegistrarProducto", oconexion);
@@ -102,9 +165,9 @@ namespace CapaDatos
                 idautogenerado = 0;
                 Mensaje = ex.Message;
             }
-
             return idautogenerado;
         }
+
         public bool Editar(Producto obj, out string Mensaje)
         {
             bool resultado = false;
@@ -133,6 +196,7 @@ namespace CapaDatos
                     resultado = Convert.ToBoolean(cmd.Parameters["Resultado"].Value);
                     Mensaje = cmd.Parameters["Mensaje"].Value.ToString();
                 }
+
             }
             catch (Exception ex)
             {
@@ -141,6 +205,9 @@ namespace CapaDatos
             }
             return resultado;
         }
+
+
+
         public bool GuardarDatosImagen(Producto obj, out string Mensaje)
         {
 
@@ -151,9 +218,10 @@ namespace CapaDatos
             {
                 using (SqlConnection oconexion = new SqlConnection(Conexion.cn))
                 {
+
                     string query = "update producto set RutaImagen = @rutaimagen, NombreImagen = @nombreimagen where IdProducto = @idproducto";
 
-                    SqlCommand cmd = new SqlCommand("sp_RegistrarProducto", oconexion);
+                    SqlCommand cmd = new SqlCommand(query, oconexion);
                     cmd.Parameters.AddWithValue("@rutaimagen", obj.RutaImagen);
                     cmd.Parameters.AddWithValue("@nombreimagen", obj.NombreImagen);
                     cmd.Parameters.AddWithValue("@idproducto", obj.IdProducto);
@@ -167,7 +235,7 @@ namespace CapaDatos
                     }
                     else
                     {
-                        Mensaje = "No se pudo actulizar la imagen";
+                        Mensaje = "No se pudo actualizar imagen";
                     }
                 }
             }
@@ -178,7 +246,14 @@ namespace CapaDatos
             }
 
             return resultado;
+
         }
+
+
+
+
+
+
         public bool Eliminar(int id, out string Mensaje)
         {
             bool resultado = false;
@@ -200,6 +275,7 @@ namespace CapaDatos
                     resultado = Convert.ToBoolean(cmd.Parameters["Resultado"].Value);
                     Mensaje = cmd.Parameters["Mensaje"].Value.ToString();
                 }
+
             }
             catch (Exception ex)
             {
@@ -209,6 +285,11 @@ namespace CapaDatos
             return resultado;
         }
 
+
+
+
+
+
+
     }
 }
-DigitShapes add .
