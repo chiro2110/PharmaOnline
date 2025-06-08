@@ -116,11 +116,11 @@ namespace CapaPresentacionAdmin.Controllers
         public ActionResult Reestablecer(string correo)
         {
 
-            Usuario ousurio = new Usuario();
+            Usuario ousuario = new Usuario();
 
-            ousurio = new CN_Usuarios().Listar().Where(item => item.Correo == correo).FirstOrDefault();
+            ousuario = new CN_Usuarios().Listar().Where(item => item.Correo == correo).FirstOrDefault();
 
-            if (ousurio == null)
+            if (ousuario == null)
             {
 
 
@@ -130,7 +130,7 @@ namespace CapaPresentacionAdmin.Controllers
 
 
             string mensaje = string.Empty;
-            bool respuesta = new CN_Usuarios().ReestablecerClave(ousurio.IdUsuario, correo, out mensaje);
+            bool respuesta = new CN_Usuarios().ReestablecerClave(ousuario.IdUsuario, correo, out mensaje);
 
             if (respuesta)
             {
