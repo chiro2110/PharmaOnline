@@ -396,3 +396,5 @@ end
 
 
 Select * from PRODUCTO;
+
+Select * from USUARIO;
