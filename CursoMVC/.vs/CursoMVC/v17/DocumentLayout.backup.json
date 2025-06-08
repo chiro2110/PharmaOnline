@@ -3,44 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{180AA05E-4782-4F37-A0ED-DFE1304B658C}|CapaDatos\\CapaDatos.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capadatos\\cd_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{180AA05E-4782-4F37-A0ED-DFE1304B658C}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cd_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{817FA3DD-CCE5-42BD-9D07-5394C939E748}|CapaNegocio\\CapaNegocio.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capanegocio\\cn_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{817FA3DD-CCE5-42BD-9D07-5394C939E748}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\cn_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE2213EE-37A5-42DA-9A2D-D9E9EB240955}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\capapresentacionadmin\\controllers\\mantenedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE2213EE-37A5-42DA-9A2D-D9E9EB240955}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|solutionrelative:capapresentacionadmin\\controllers\\mantenedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{817FA3DD-CCE5-42BD-9D07-5394C939E748}|CapaNegocio\\CapaNegocio.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capanegocio\\cn_recursos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{817FA3DD-CCE5-42BD-9D07-5394C939E748}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\cn_recursos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE2213EE-37A5-42DA-9A2D-D9E9EB240955}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capapresentacionadmin\\views\\mantenedor\\producto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE2213EE-37A5-42DA-9A2D-D9E9EB240955}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|solutionrelative:capapresentacionadmin\\views\\mantenedor\\producto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72E82FD1-C2D4-43B4-895B-44AFA99548AB}|CapaEntidad\\CapaEntidad.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capaentidad\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72E82FD1-C2D4-43B4-895B-44AFA99548AB}|CapaEntidad\\CapaEntidad.csproj|solutionrelative:capaentidad\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE2213EE-37A5-42DA-9A2D-D9E9EB240955}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capapresentacionadmin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE2213EE-37A5-42DA-9A2D-D9E9EB240955}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|solutionrelative:capapresentacionadmin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE2213EE-37A5-42DA-9A2D-D9E9EB240955}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capapresentacionadmin\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE2213EE-37A5-42DA-9A2D-D9E9EB240955}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|solutionrelative:capapresentacionadmin\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE2213EE-37A5-42DA-9A2D-D9E9EB240955}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capapresentacionadmin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE2213EE-37A5-42DA-9A2D-D9E9EB240955}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|solutionrelative:capapresentacionadmin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{72E82FD1-C2D4-43B4-895B-44AFA99548AB}|CapaEntidad\\CapaEntidad.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capaentidad\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72E82FD1-C2D4-43B4-895B-44AFA99548AB}|CapaEntidad\\CapaEntidad.csproj|solutionrelative:capaentidad\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{817FA3DD-CCE5-42BD-9D07-5394C939E748}|CapaNegocio\\CapaNegocio.csproj|C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\capanegocio\\cn_marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{817FA3DD-CCE5-42BD-9D07-5394C939E748}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\cn_marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72E82FD1-C2D4-43B4-895B-44AFA99548AB}|CapaEntidad\\CapaEntidad.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capaentidad\\reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72E82FD1-C2D4-43B4-895B-44AFA99548AB}|CapaEntidad\\CapaEntidad.csproj|solutionrelative:capaentidad\\reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{180AA05E-4782-4F37-A0ED-DFE1304B658C}|CapaDatos\\CapaDatos.csproj|C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\capadatos\\cd_marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{180AA05E-4782-4F37-A0ED-DFE1304B658C}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cd_marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{817FA3DD-CCE5-42BD-9D07-5394C939E748}|CapaNegocio\\CapaNegocio.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capanegocio\\cn_reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{817FA3DD-CCE5-42BD-9D07-5394C939E748}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\cn_reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{180AA05E-4782-4F37-A0ED-DFE1304B658C}|CapaDatos\\CapaDatos.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capadatos\\cd_reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{180AA05E-4782-4F37-A0ED-DFE1304B658C}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cd_reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,135 +34,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "BundleConfig.cs",
               "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionAdmin\\App_Start\\BundleConfig.cs",
               "RelativeDocumentMoniker": "CapaPresentacionAdmin\\App_Start\\BundleConfig.cs",
               "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionAdmin\\App_Start\\BundleConfig.cs",
               "RelativeToolTip": "CapaPresentacionAdmin\\App_Start\\BundleConfig.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAmwB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T05:26:56.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionAdmin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "CapaPresentacionAdmin\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionAdmin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "CapaPresentacionAdmin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-07T05:23:09.308Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CN_Recursos.cs",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaNegocio\\CN_Recursos.cs",
-              "RelativeDocumentMoniker": "CapaNegocio\\CN_Recursos.cs",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaNegocio\\CN_Recursos.cs",
-              "RelativeToolTip": "CapaNegocio\\CN_Recursos.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAYwFcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T05:16:22.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Producto.cshtml",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionAdmin\\Views\\Mantenedor\\Producto.cshtml",
-              "RelativeDocumentMoniker": "CapaPresentacionAdmin\\Views\\Mantenedor\\Producto.cshtml",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionAdmin\\Views\\Mantenedor\\Producto.cshtml",
-              "RelativeToolTip": "CapaPresentacionAdmin\\Views\\Mantenedor\\Producto.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQCAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-07T05:15:17.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaEntidad\\Producto.cs",
-              "RelativeDocumentMoniker": "CapaEntidad\\Producto.cs",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaEntidad\\Producto.cs",
-              "RelativeToolTip": "CapaEntidad\\Producto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T04:56:21.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CN_Producto.cs",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaNegocio\\CN_Producto.cs",
-              "RelativeDocumentMoniker": "CapaNegocio\\CN_Producto.cs",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaNegocio\\CN_Producto.cs",
-              "RelativeToolTip": "CapaNegocio\\CN_Producto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T04:38:12.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CD_Producto.cs",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaDatos\\CD_Producto.cs",
-              "RelativeDocumentMoniker": "CapaDatos\\CD_Producto.cs",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaDatos\\CD_Producto.cs",
-              "RelativeToolTip": "CapaDatos\\CD_Producto.cs",
-              "ViewState": "AgIAAA0BAAAAAAAAAAAYwBgBAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T04:15:36.194Z",
+              "WhenOpened": "2025-06-08T02:47:51.017Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MantenedorController.cs",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionAdmin\\Controllers\\MantenedorController.cs",
-              "RelativeDocumentMoniker": "CapaPresentacionAdmin\\Controllers\\MantenedorController.cs",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionAdmin\\Controllers\\MantenedorController.cs",
-              "RelativeToolTip": "CapaPresentacionAdmin\\Controllers\\MantenedorController.cs",
-              "ViewState": "AgIAAM0AAAAAAAAAAAAQwPgAAAAAAAAAAAAAAA==",
+              "Title": "DashBoard.cs",
+              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaEntidad\\DashBoard.cs",
+              "RelativeDocumentMoniker": "CapaEntidad\\DashBoard.cs",
+              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaEntidad\\DashBoard.cs",
+              "RelativeToolTip": "CapaEntidad\\DashBoard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T03:37:08.956Z",
+              "WhenOpened": "2025-06-07T23:07:09.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CN_Marca.cs",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaNegocio\\CN_Marca.cs",
-              "RelativeDocumentMoniker": "CapaNegocio\\CN_Marca.cs",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaNegocio\\CN_Marca.cs",
-              "RelativeToolTip": "CapaNegocio\\CN_Marca.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAqwFsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Reporte.cs",
+              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaEntidad\\Reporte.cs",
+              "RelativeDocumentMoniker": "CapaEntidad\\Reporte.cs",
+              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaEntidad\\Reporte.cs",
+              "RelativeToolTip": "CapaEntidad\\Reporte.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T03:33:49.136Z"
+              "WhenOpened": "2025-06-07T23:05:03.259Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CD_Marca.cs",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaDatos\\CD_Marca.cs",
-              "RelativeDocumentMoniker": "CapaDatos\\CD_Marca.cs",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaDatos\\CD_Marca.cs",
-              "RelativeToolTip": "CapaDatos\\CD_Marca.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionAdmin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CapaPresentacionAdmin\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionAdmin\\Controllers\\HomeController.cs*",
+              "RelativeToolTip": "CapaPresentacionAdmin\\Controllers\\HomeController.cs*",
+              "ViewState": "AgIAADEAAAAAAAAAAAAuwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T03:32:01.935Z"
+              "WhenOpened": "2025-06-07T23:03:26.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CN_Reporte.cs",
+              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaNegocio\\CN_Reporte.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\CN_Reporte.cs",
+              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaNegocio\\CN_Reporte.cs",
+              "RelativeToolTip": "CapaNegocio\\CN_Reporte.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T23:00:00.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CD_Reporte.cs",
+              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaDatos\\CD_Reporte.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\CD_Reporte.cs",
+              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaDatos\\CD_Reporte.cs",
+              "RelativeToolTip": "CapaDatos\\CD_Reporte.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T22:59:10.705Z",
+              "EditorCaption": ""
             }
           ]
         }
