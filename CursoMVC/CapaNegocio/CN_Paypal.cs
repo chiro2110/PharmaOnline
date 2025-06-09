@@ -10,6 +10,7 @@ using System.Net.Http.Headers;
 using Newtonsoft.Json;
 
 using CapaEntidad.Paypal;
+
 namespace CapaNegocio
 {
     public class CN_Paypal

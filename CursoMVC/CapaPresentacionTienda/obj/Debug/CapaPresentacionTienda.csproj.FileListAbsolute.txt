@@ -90,3 +90,4 @@ C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionTienda\obj\De
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionTienda\obj\Debug\CapaPres.0F0FCBD9.Up2Date
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionTienda\obj\Debug\CapaPresentacionTienda.dll
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionTienda\obj\Debug\CapaPresentacionTienda.pdb
+C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionTienda\bin\CapaNegocio.dll.config

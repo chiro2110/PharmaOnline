@@ -1,12 +1,16 @@
-﻿using System;
+﻿using CapaEntidad;
+using CapaNegocio;
+using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using CapaEntidad;
-using CapaNegocio;
-
+using CapaEntidad.Paypal;
+using CapaPresentacionTienda.Filter;
 namespace CapaPresentacionTienda.Controllers
 {
     public class TiendaController : Controller
@@ -52,13 +56,34 @@ namespace CapaPresentacionTienda.Controllers
             return Json(new { data = lista }, JsonRequestBehavior.AllowGet);
         }
         [HttpPost]
-        public JsonResult ListarProducto(int idcategoria, int idmarca)
+        public JsonResult ListarProducto(int idcategoria, int idmarca, int nroPagina)
         {
             List<Producto> lista = new List<Producto>();
 
             bool conversion;
 
-            lista = new CN_Producto().Listar().Select(p => new Producto()
+            //lista = new CN_Producto().Listar().Select(p => new Producto()
+            //{
+            //    IdProducto = p.IdProducto,
+            //    Nombre = p.Nombre,
+            //    Descripcion = p.Descripcion,
+            //    oMarca = p.oMarca,
+            //    oCategoria = p.oCategoria,
+            //    Precio = p.Precio,
+            //    Stock = p.Stock,
+            //    RutaImagen = p.RutaImagen,
+            //    Base64 = CN_Recursos.ConvertirBase64(Path.Combine(p.RutaImagen,p.NombreImagen), out conversion),
+            //    Extension = Path.GetExtension(p.NombreImagen),
+            //    Activo = p.Activo
+            //}).Where(p =>
+            //    p.oCategoria.IdCategoria == (idcategoria == 0 ? p.oCategoria.IdCategoria : idcategoria) &&
+            //    p.oMarca.IdMarca == (idmarca == 0 ? p.oMarca.IdMarca : idmarca) &&
+            //    p.Stock > 0 && p.Activo == true
+            // ).ToList();
+            int _TotalRegistros;
+            int _TotalPaginas;
+
+            lista = new CN_Producto().ObtenerProductos(idmarca, idcategoria, nroPagina, 8, out _TotalRegistros, out _TotalPaginas).Select(p => new Producto()
             {
                 IdProducto = p.IdProducto,
                 Nombre = p.Nombre,
@@ -68,17 +93,14 @@ namespace CapaPresentacionTienda.Controllers
                 Precio = p.Precio,
                 Stock = p.Stock,
                 RutaImagen = p.RutaImagen,
-                Base64 = CN_Recursos.ConvertirBase64(Path.Combine(p.RutaImagen,p.NombreImagen), out conversion),
+                Base64 = CN_Recursos.ConvertirBase64(Path.Combine(p.RutaImagen, p.NombreImagen), out conversion),
                 Extension = Path.GetExtension(p.NombreImagen),
                 Activo = p.Activo
-            }).Where(p =>
-                p.oCategoria.IdCategoria == (idcategoria == 0 ? p.oCategoria.IdCategoria : idcategoria) &&
-                p.oMarca.IdMarca == (idmarca == 0 ? p.oMarca.IdMarca : idmarca) &&
-                p.Stock > 0 && p.Activo == true
-             ).ToList();
+            }).ToList();
 
-            var jsonresult = Json(new { data = lista }, JsonRequestBehavior.AllowGet);
+            var jsonresult = Json(new { data = lista, totalRegistros = _TotalRegistros, totalPaginas = _TotalPaginas }, JsonRequestBehavior.AllowGet);
             jsonresult.MaxJsonLength = int.MaxValue;
+
             return jsonresult;
         }
 
@@ -218,9 +240,170 @@ namespace CapaPresentacionTienda.Controllers
             return Json(new { lista = oLista }, JsonRequestBehavior.AllowGet);
         }
 
+        [ValidarSession]
+        [Authorize]
         public ActionResult Carrito()
         {
             return View();
         }
+        [HttpPost]
+        public async Task<JsonResult> ProcesarPago(List<Carrito> oListaCarrito, Venta oVenta)
+        {
+
+            decimal total = 0;
+            DataTable detalle_venta = new DataTable();
+            detalle_venta.Locale = new CultureInfo("es-PE");
+            detalle_venta.Columns.Add("IdProducto", typeof(string));
+            detalle_venta.Columns.Add("Cantidad", typeof(int));
+            detalle_venta.Columns.Add("Total", typeof(decimal));
+
+
+            List<Item> oListaItem = new List<Item>();
+
+            foreach (Carrito oCarrito in oListaCarrito)
+            {
+                decimal subtotal = Convert.ToDecimal(oCarrito.Cantidad.ToString()) * oCarrito.oProducto.Precio;
+
+                total += subtotal;
+
+                oListaItem.Add(new Item()
+                {
+                    name = oCarrito.oProducto.Nombre,
+                    quantity = oCarrito.Cantidad.ToString(),
+                    unit_amount = new UnitAmount()
+                    {
+                        currency_code = "MXN",
+                        value = oCarrito.oProducto.Precio.ToString("G", new CultureInfo("es-PE"))
+                    }
+
+
+                });
+
+                detalle_venta.Rows.Add(new object[] {
+                    oCarrito.oProducto.IdProducto,
+                    oCarrito.Cantidad,
+                    subtotal
+                });
+            }
+
+
+            PurchaseUnit purchaseUnit = new PurchaseUnit()
+            {
+                amount = new Amount()
+                {
+                    currency_code = "MXN",
+                    value = total.ToString("G", new CultureInfo("es-PE")),
+                    breakdown = new Breakdown()
+                    {
+                        item_total = new ItemTotal()
+                        {
+                            currency_code = "MXN",
+                            value = total.ToString("G", new CultureInfo("es-PE")),
+                        }
+                    }
+
+                },
+                description = "compra de articulo de mi tienda",
+                items = oListaItem
+
+            };
+
+
+            Checkout_Order oCheckOutOrder = new Checkout_Order()
+            {
+                intent = "CAPTURE",
+                purchase_units = new List<PurchaseUnit>() { purchaseUnit },
+                application_context = new ApplicationContext()
+                {
+                    brand_name = "MiTienda.com",
+                    landing_page = "NO_PREFERENCE",
+                    user_action = "PAY_NOW",
+                    return_url = "https://localhost:44380/Tienda/PagoEfectuado",
+                    cancel_url = "https://localhost:44380/Tienda/Carrito"
+
+                }
+
+            };
+
+            oVenta.MontoTotal = total;
+            oVenta.IdCliente = ((Cliente)Session["Cliente"]).IdCliente;
+
+            TempData["Venta"] = oVenta;
+            TempData["DetalleVenta"] = detalle_venta;
+
+
+            CN_Paypal opaypal = new CN_Paypal();
+
+            Response_Paypal<Response_Checkout> response_paypal = new Response_Paypal<Response_Checkout>();
+
+            response_paypal = await opaypal.CrearSolicitud(oCheckOutOrder);
+
+            return Json(response_paypal, JsonRequestBehavior.AllowGet);
+        }
+
+        [ValidarSession]
+        [Authorize]
+        public async Task<ActionResult> PagoEfectuado()
+        {
+            string token = Request.QueryString["token"];
+
+            CN_Paypal opaypal = new CN_Paypal();
+            Response_Paypal<Response_Capture> response_paypal = new Response_Paypal<Response_Capture>();
+            response_paypal = await opaypal.AprobarPago(token);
+
+
+            ViewData["Status"] = response_paypal.Status;
+
+            if (response_paypal.Status)
+            {
+
+                Venta oVenta = (Venta)TempData["Venta"];
+
+                DataTable detalle_venta = (DataTable)TempData["DetalleVenta"];
+
+                oVenta.IdTransaccion = response_paypal.Response.purchase_units[0].payments.captures[0].id;
+
+                string mensaje = string.Empty;
+
+                bool respuesta = new CN_Venta().Registrar(oVenta, detalle_venta, out mensaje);
+
+
+                ViewData["IdTransaccion"] = oVenta.IdTransaccion;
+
+            }
+
+            return View();
+        }
+        [ValidarSession]
+        [Authorize]
+        public ActionResult MisCompras()
+        {
+
+            int idcliente = ((Cliente)Session["Cliente"]).IdCliente;
+
+            List<DetalleVenta> oLista = new List<DetalleVenta>();
+
+            bool conversion;
+
+            oLista = new CN_Venta().ListarCompras(idcliente).Select(oc => new DetalleVenta()
+            {
+                oProducto = new Producto()
+                {
+                    Nombre = oc.oProducto.Nombre,
+                    Precio = oc.oProducto.Precio,
+                    RutaImagen = oc.oProducto.RutaImagen,
+                    Base64 = CN_Recursos.ConvertirBase64(Path.Combine(oc.oProducto.RutaImagen, oc.oProducto.NombreImagen), out conversion),
+                    Extension = Path.GetExtension(oc.oProducto.NombreImagen)
+
+                },
+                Cantidad = oc.Cantidad,
+                Total = oc.Total,
+                IdTransaccion = oc.IdTransaccion
+            }).ToList();
+
+            return View(oLista);
+
+        }
+
     }
 }
