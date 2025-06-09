@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capapresentaciontienda\\views\\acceso\\cambiarclave.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|solutionrelative:capapresentaciontienda\\views\\acceso\\cambiarclave.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capapresentaciontienda\\views\\tienda\\carrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|solutionrelative:capapresentaciontienda\\views\\tienda\\carrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capapresentaciontienda\\controllers\\accesocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|solutionrelative:capapresentaciontienda\\controllers\\accesocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capapresentaciontienda\\controllers\\tiendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|solutionrelative:capapresentaciontienda\\controllers\\tiendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capapresentaciontienda\\views\\acceso\\reestablecer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|solutionrelative:capapresentaciontienda\\views\\acceso\\reestablecer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{817FA3DD-CCE5-42BD-9D07-5394C939E748}|CapaNegocio\\CapaNegocio.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capanegocio\\cn_ubicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{817FA3DD-CCE5-42BD-9D07-5394C939E748}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\cn_ubicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capapresentaciontienda\\views\\acceso\\registrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|solutionrelative:capapresentaciontienda\\views\\acceso\\registrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{180AA05E-4782-4F37-A0ED-DFE1304B658C}|CapaDatos\\CapaDatos.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capadatos\\cd_ubicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{180AA05E-4782-4F37-A0ED-DFE1304B658C}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cd_ubicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capapresentaciontienda\\views\\acceso\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|solutionrelative:capapresentaciontienda\\views\\acceso\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{72E82FD1-C2D4-43B4-895B-44AFA99548AB}|CapaEntidad\\CapaEntidad.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capaentidad\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72E82FD1-C2D4-43B4-895B-44AFA99548AB}|CapaEntidad\\CapaEntidad.csproj|solutionrelative:capaentidad\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\capapresentaciontienda\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|solutionrelative:capapresentaciontienda\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{180AA05E-4782-4F37-A0ED-DFE1304B658C}|CapaDatos\\CapaDatos.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capadatos\\cd_carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{180AA05E-4782-4F37-A0ED-DFE1304B658C}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cd_carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\capapresentaciontienda\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|solutionrelative:capapresentaciontienda\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{817FA3DD-CCE5-42BD-9D07-5394C939E748}|CapaNegocio\\CapaNegocio.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capanegocio\\cn_carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{817FA3DD-CCE5-42BD-9D07-5394C939E748}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\cn_carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\capapresentaciontienda\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|solutionrelative:capapresentaciontienda\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capapresentaciontienda\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|solutionrelative:capapresentaciontienda\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|c:\\users\\roort\\desktop\\proyectotitulacion\\cursomvc\\capapresentaciontienda\\views\\tienda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B6C17BD0-972E-47F0-B2EF-8002AE19C04F}|CapaPresentacionTienda\\CapaPresentacionTienda.csproj|solutionrelative:capapresentaciontienda\\views\\tienda\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,105 +51,119 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CambiarClave.cshtml",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Views\\Acceso\\CambiarClave.cshtml",
-              "RelativeDocumentMoniker": "CapaPresentacionTienda\\Views\\Acceso\\CambiarClave.cshtml",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Views\\Acceso\\CambiarClave.cshtml",
-              "RelativeToolTip": "CapaPresentacionTienda\\Views\\Acceso\\CambiarClave.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAwwEwAAAAAAAAAAAAAAA==",
+              "Title": "Carrito.cshtml",
+              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Views\\Tienda\\Carrito.cshtml",
+              "RelativeDocumentMoniker": "CapaPresentacionTienda\\Views\\Tienda\\Carrito.cshtml",
+              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Views\\Tienda\\Carrito.cshtml",
+              "RelativeToolTip": "CapaPresentacionTienda\\Views\\Tienda\\Carrito.cshtml",
+              "ViewState": "AgIAAH4BAAAAAAAAAAAAAEQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-08T23:41:28.872Z",
+              "WhenOpened": "2025-06-09T02:11:34.008Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Reestablecer.cshtml",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Views\\Acceso\\Reestablecer.cshtml",
-              "RelativeDocumentMoniker": "CapaPresentacionTienda\\Views\\Acceso\\Reestablecer.cshtml",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Views\\Acceso\\Reestablecer.cshtml",
-              "RelativeToolTip": "CapaPresentacionTienda\\Views\\Acceso\\Reestablecer.cshtml",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-08T23:38:50.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Registrar.cshtml",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Views\\Acceso\\Registrar.cshtml",
-              "RelativeDocumentMoniker": "CapaPresentacionTienda\\Views\\Acceso\\Registrar.cshtml",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Views\\Acceso\\Registrar.cshtml",
-              "RelativeToolTip": "CapaPresentacionTienda\\Views\\Acceso\\Registrar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-08T23:34:20.876Z",
+              "Title": "CN_Ubicacion.cs",
+              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaNegocio\\CN_Ubicacion.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\CN_Ubicacion.cs",
+              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaNegocio\\CN_Ubicacion.cs",
+              "RelativeToolTip": "CapaNegocio\\CN_Ubicacion.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T02:09:01.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Views\\Acceso\\Index.cshtml",
-              "RelativeDocumentMoniker": "CapaPresentacionTienda\\Views\\Acceso\\Index.cshtml",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Views\\Acceso\\Index.cshtml",
-              "RelativeToolTip": "CapaPresentacionTienda\\Views\\Acceso\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-08T23:31:24.026Z",
+              "Title": "Departamento.cs",
+              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaEntidad\\Departamento.cs",
+              "RelativeDocumentMoniker": "CapaEntidad\\Departamento.cs",
+              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaEntidad\\Departamento.cs",
+              "RelativeToolTip": "CapaEntidad\\Departamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T02:06:24.435Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccesoController.cs",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Controllers\\AccesoController.cs",
-              "RelativeDocumentMoniker": "CapaPresentacionTienda\\Controllers\\AccesoController.cs",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Controllers\\AccesoController.cs",
-              "RelativeToolTip": "CapaPresentacionTienda\\Controllers\\AccesoController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBoAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "CD_Ubicacion.cs",
+              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaDatos\\CD_Ubicacion.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\CD_Ubicacion.cs",
+              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaDatos\\CD_Ubicacion.cs",
+              "RelativeToolTip": "CapaDatos\\CD_Ubicacion.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAgwFsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T23:30:52.65Z",
+              "WhenOpened": "2025-06-09T02:04:52.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Site.css",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Content\\Site.css",
-              "RelativeDocumentMoniker": "CapaPresentacionTienda\\Content\\Site.css",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Content\\Site.css",
-              "RelativeToolTip": "CapaPresentacionTienda\\Content\\Site.css",
-              "ViewState": "AgIAADEwAAAAAAAAAAAAAEgwAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-08T08:16:33.003Z",
+              "Title": "CN_Carrito.cs",
+              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaNegocio\\CN_Carrito.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\CN_Carrito.cs",
+              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaNegocio\\CN_Carrito.cs",
+              "RelativeToolTip": "CapaNegocio\\CN_Carrito.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T01:58:09.333Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "RouteConfig.cs",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\App_Start\\RouteConfig.cs",
-              "RelativeDocumentMoniker": "CapaPresentacionTienda\\App_Start\\RouteConfig.cs",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\App_Start\\RouteConfig.cs",
-              "RelativeToolTip": "CapaPresentacionTienda\\App_Start\\RouteConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA0AAAAAAAAAA==",
+              "Title": "CD_Carrito.cs",
+              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaDatos\\CD_Carrito.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\CD_Carrito.cs",
+              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaDatos\\CD_Carrito.cs",
+              "RelativeToolTip": "CapaDatos\\CD_Carrito.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T08:15:53.56Z",
+              "WhenOpened": "2025-06-09T01:55:23.707Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "CapaPresentacionTienda\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "CapaPresentacionTienda\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CapaPresentacionTienda\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CapaPresentacionTienda\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T01:47:17.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TiendaController.cs",
+              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Controllers\\TiendaController.cs",
+              "RelativeDocumentMoniker": "CapaPresentacionTienda\\Controllers\\TiendaController.cs",
+              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Controllers\\TiendaController.cs",
+              "RelativeToolTip": "CapaPresentacionTienda\\Controllers\\TiendaController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAADwv30AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T08:06:55.94Z"
+              "WhenOpened": "2025-06-09T01:45:39.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Views\\Tienda\\Index.cshtml",
+              "RelativeDocumentMoniker": "CapaPresentacionTienda\\Views\\Tienda\\Index.cshtml",
+              "ToolTip": "C:\\Users\\roort\\Desktop\\ProyectoTitulacion\\CursoMVC\\CapaPresentacionTienda\\Views\\Tienda\\Index.cshtml",
+              "RelativeToolTip": "CapaPresentacionTienda\\Views\\Tienda\\Index.cshtml",
+              "ViewState": "AgIAAIMBAAAAAAAAAAAgwJEBAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T01:39:46.726Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -328,9 +328,9 @@
 
                          $("#img_producto").LoadingOverlay("hide");
 
-                        //if (data.conversion) {
-                        //    $("#img_producto").attr({ "src": "data:image/" + data.extension + ";base64," + data.textobase64 });
-                        //}
+                       if (data.conversion) {
+                        $("#img_producto").attr({ "src": "data:image/" + data.extension + ";base64," + data.textobase64 });
+                        }
 
                          $("#img_producto").attr({ "src": data.ruta});
 
