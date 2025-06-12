@@ -18,7 +18,7 @@ namespace CapaPresentacionAdmin.Controllers
     public class MantenedorController : Controller
     {
         
-
+        private CN_FireBase cnfirebase = new CN_FireBase();
         // GET: Mantenedor
         public ActionResult Categoria()
         {
@@ -136,11 +136,11 @@ namespace CapaPresentacionAdmin.Controllers
             return Json(new { data = oLista }, JsonRequestBehavior.AllowGet);
         }
 
-       
+
         [HttpPost]
-        public JsonResult GuardarProducto(string objeto, HttpPostedFileBase archivoImagen)
+        public async Task<JsonResult> GuardarProducto(string objeto, HttpPostedFileBase archivoImagen)
         {
-            object resultado;
+
             string mensaje = string.Empty;
             bool operacion_exitosa = true;
             bool guardar_imagen_exito = true;
@@ -152,10 +152,12 @@ namespace CapaPresentacionAdmin.Controllers
 
             if (decimal.TryParse(oProducto.PrecioTexto, NumberStyles.AllowDecimalPoint, new CultureInfo("es-PE"), out precio))
             {
+
                 oProducto.Precio = precio;
             }
             else
             {
+
                 return Json(new { operacionExitosa = false, mensaje = "El formato del precio debe ser ##.##" }, JsonRequestBehavior.AllowGet);
             }
 
@@ -163,6 +165,7 @@ namespace CapaPresentacionAdmin.Controllers
             if (oProducto.IdProducto == 0)
             {
                 int idProductoGenerado = new CN_Producto().Registrar(oProducto, out mensaje);
+
                 if (idProductoGenerado != 0)
                 {
                     oProducto.IdProducto = idProductoGenerado;
@@ -177,33 +180,42 @@ namespace CapaPresentacionAdmin.Controllers
                 operacion_exitosa = new CN_Producto().Editar(oProducto, out mensaje);
             }
 
+
             if (operacion_exitosa)
             {
+
                 if (archivoImagen != null)
                 {
-                    string ruta_guardar = ConfigurationManager.AppSettings["ServidorFotos"];
+
+                    //string ruta_guardar = ConfigurationManager.AppSettings["ServidorFotos"];
+
                     string extension = Path.GetExtension(archivoImagen.FileName);
                     string nombre_imagen = string.Concat(oProducto.IdProducto.ToString(), extension);
 
-                    try
-                    {
-                        archivoImagen.SaveAs(Path.Combine(ruta_guardar, nombre_imagen));
-                    }
+                    string ruta_guardar = await cnfirebase.SubirStorage(archivoImagen.InputStream, nombre_imagen);
 
-                    catch (Exception ex)
-                    {
-                        string msg = ex.Message;
-                        guardar_imagen_exito = false;
-                    }
+                    //try
+                    //{
+                    //    archivoImagen.SaveAs(Path.Combine(ruta_guardar, nombre_imagen));
+
+                    //}
+                    //catch (Exception ex) {
+                    //    string msg = ex.Message;
+                    //    guardar_imagen_exito = false;
+                    //}
+
+                    guardar_imagen_exito = ruta_guardar != "" ? true : false;
 
                     if (guardar_imagen_exito)
                     {
+
                         oProducto.RutaImagen = ruta_guardar;
                         oProducto.NombreImagen = nombre_imagen;
-                        bool rsp = new CN_Producto().GuardarDatosImagen(oProducto, out mensaje);
+                        bool rspta = new CN_Producto().GuardarDatosImagen(oProducto, out mensaje);
                     }
                     else
                     {
+
                         mensaje = "Se guardaro el producto pero hubo problemas con la imagen";
                     }
 
@@ -212,27 +224,33 @@ namespace CapaPresentacionAdmin.Controllers
             }
 
 
-            return Json(new { operacionExitosa = operacion_exitosa, idGenerado = oProducto.IdProducto, mensaje = mensaje }, JsonRequestBehavior.AllowGet);
 
-            
+
+            return Json(new { operacionExitosa = operacion_exitosa, idGenerado = oProducto.IdProducto, mensaje = mensaje }, JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
         public JsonResult ImagenProducto(int id)
         {
+
             bool conversion;
             Producto oproducto = new CN_Producto().Listar().Where(p => p.IdProducto == id).FirstOrDefault();
 
-            string textoBase64 = CN_Recursos.ConvertirBase64(Path.Combine(oproducto.RutaImagen, oproducto.NombreImagen), out conversion);
+            //string textoBase64 = CN_Recursos.ConvertirBase64(Path.Combine(oproducto.RutaImagen,oproducto.NombreImagen), out conversion );
 
-            return Json(new
-            {
-                conversion = conversion,
-                textobase64 = textoBase64,
-                extension = Path.GetExtension(oproducto.NombreImagen)
-            },
-            JsonRequestBehavior.AllowGet
-            );
+
+            //return Json(new
+            //{
+            //    conversion = conversion,
+            //    textobase64 = textoBase64,
+            //    extension = Path.GetExtension(oproducto.NombreImagen)
+
+            //},
+            // JsonRequestBehavior.AllowGet
+            //);
+
+            return Json(new { ruta = oproducto.RutaImagen }, JsonRequestBehavior.AllowGet);
+
         }
 
 

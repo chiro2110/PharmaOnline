@@ -115,3 +115,6 @@ C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionAdmin\bin\Sys
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionAdmin\bin\System.Memory.xml
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionAdmin\bin\System.Numerics.Vectors.xml
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionAdmin\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionAdmin\bin\Firebase.Auth.dll
+C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionAdmin\bin\Firebase.Storage.dll
+C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionAdmin\bin\CapaNegocio.dll.config

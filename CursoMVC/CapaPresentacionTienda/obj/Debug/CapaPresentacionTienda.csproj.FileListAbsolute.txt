@@ -91,3 +91,7 @@ C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionTienda\obj\De
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionTienda\obj\Debug\CapaPresentacionTienda.dll
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionTienda\obj\Debug\CapaPresentacionTienda.pdb
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionTienda\bin\CapaNegocio.dll.config
+C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionTienda\bin\Firebase.Storage.dll
+C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionTienda\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionTienda\bin\Firebase.Auth.dll
+C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaPresentacionTienda\bin\System.Diagnostics.DiagnosticSource.xml

@@ -390,11 +390,13 @@ begin
 	fetch next @obtenerRegistros rows only
 
 
-	drop table #tabla_resultado
-
 end
 
 
 Select * from PRODUCTO;
 
 Select * from USUARIO;
+
+Select * from CLIENTE;
+
+

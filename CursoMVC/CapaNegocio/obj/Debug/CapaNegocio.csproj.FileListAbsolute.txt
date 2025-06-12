@@ -11,8 +11,6 @@ C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\obj\Debug\CapaNeg
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\obj\Debug\CapaNegocio.pdb
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\CapaNegocio.dll.config
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\Firebase.Auth.dll
-C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\Firebase.dll
-C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\FirebaseAdmin.dll
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\Google.Api.Gax.dll
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\Google.Api.Gax.Rest.dll
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\Google.Apis.Auth.dll
@@ -24,8 +22,6 @@ C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\Newtons
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\Newtonsoft.Json.dll
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\System.Configuration.ConfigurationManager.dll
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\System.ValueTuple.dll
-C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\Firebase.xml
-C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\FirebaseAdmin.xml
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\Google.Api.Gax.pdb
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\Google.Api.Gax.xml
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\Google.Api.Gax.Rest.pdb
@@ -40,3 +36,4 @@ C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\Newtons
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\Newtonsoft.Json.Bson.pdb
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\Newtonsoft.Json.Bson.xml
 C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\roort\Desktop\ProyectoTitulacion\CursoMVC\CapaNegocio\bin\Debug\Firebase.Storage.dll

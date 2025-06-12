@@ -21,10 +21,10 @@ namespace CapaNegocio
         {
             string UrlImagen = string.Empty;
 
-            string email = "Ingrese aqui";
-            string clave = "Ingrese aqui";
-            string ruta = "Ingrese aqui";
-            string api_key = "Ingrese aqui";
+            string email = "ro@gmail.com";
+            string clave = "ro1234";
+            string ruta = "tienda-15997.firebasestorage.app";
+            string api_key = "AIzaSyDBIY17rVtCD2cBMchHmFxi1LJ71liOSHk";
 
             try
             {
